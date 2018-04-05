@@ -16,12 +16,11 @@ public class Homework3_5_2 {
         }
         System.out.println("Enter index of element to find a value: ");
         int index = scanner.nextInt();
-        for (int i = 0; i < list.length; i++) {
-            if (index == i) {
-                System.out.println(list[i]);
-            }
+
+        System.out.println(list[index]);
 
 
-        }
+
+
     }
 }
