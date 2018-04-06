@@ -19,7 +19,7 @@ public class Homework3_3 {
         int[] rez2 = new int[5];
 
         System.arraycopy(list, 0, rez1, 0, 5);
-        System.arraycopy(list,5, rez2,0,5);
+        System.arraycopy(list,5, rez2, 0, 5);
 
         Arrays.sort(rez1);
         Arrays.sort(rez2);
