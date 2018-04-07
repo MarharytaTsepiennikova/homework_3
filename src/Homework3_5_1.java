@@ -6,16 +6,14 @@ import java.util.Arrays;
 public class Homework3_5_1 {
     public static void main(String[] args) {
 
-        int[] list1 = {1, 2, 3, 4};
-        int[] list2 = new int[4];
+        int[] list = {1, 2, 3, 4};
+        int var = list[0];
+        for (int i = 0, n = list.length-1; i < list.length; i++, n--) {
+            list[i] = list[n];
+        }
+        list[list.length-1] = var;
 
-        list2[0] = list1[3];
-        list2[1] = list1[2];
-        list2[2] = list1[1];
-        list2[3] = list1[0];
-
-        System.out.println(Arrays.toString(list1));
-        System.out.println(Arrays.toString(list2));
+        System.out.println(Arrays.toString(list));
 
     }
 }
