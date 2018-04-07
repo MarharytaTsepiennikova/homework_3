@@ -8,8 +8,9 @@ public class Homework3_5_1 {
 
         int[] list = {1, 2, 3, 4};
         int var = list[0];
-        for (int i = 0, n = list.length-1; i < list.length; i++, n--) {
-            list[i] = list[n];
+        int n = list.length;
+        for (int i = 0; i < list.length; i++) {
+            list[i] = list[--n];
         }
         list[list.length-1] = var;
 
